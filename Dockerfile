@@ -1,7 +1,7 @@
 # A VM like docker container based on alpine
 # see https://hub.docker.com/r/phuslu/alpine/
 
-FROM alpine:3.6
+FROM alpine:3.7
 RUN \
   sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories && \
   apk update && \
