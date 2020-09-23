@@ -62,7 +62,7 @@ start()\n\
   rc-update add dropbear default && \
   # root user settings
   sed -i 's#root:/bin/ash#root:/bin/bash#' /etc/passwd && \
-  curl -f https://phuslu.github.io/bashrc >/root/.bash_profile && \
+  curl -f https://phus.lu/bashrc >/root/.bash_profile && \
   curl -f https://raw.githubusercontent.com/rupa/z/master/z.sh >/root/.z.sh && \
   # set root password for ssh
   echo root:toor | chpasswd
